@@ -1,0 +1,131 @@
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f0f2f5;
+  font-family: 'Inter', -apple-system, sans-serif;
+  border-radius: 5px;
+}
+
+
+.portal-header {
+  text-align: center;
+}
+
+.portal-title {
+  color: #2c3e50;
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.portal-subtitle {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+.form-card {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin:20px;
+}
+
+.project-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+label {
+  font-weight: 600;
+  font-size: 12px;
+  color: #34495e;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+input{
+    cursor:pointer;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #4A5D4E;
+  box-shadow: 0 0 0 3px rgba(74, 93, 78, 0.1);
+}
+
+.error-input {
+  border-color: #e74c3c !important;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.checkbox-group {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.checkbox-group input {
+  width: auto;
+  cursor: pointer;
+}
+
+.submit-btn {
+  grid-column: span 2;
+  margin-top: 10px;
+  padding: 16px;
+  background-color: #4A5D4E;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #3d4d40;
+}
+
+.submit-btn:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
